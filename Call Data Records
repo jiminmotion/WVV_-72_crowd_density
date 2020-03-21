@@ -1,0 +1,19 @@
+https://en.wikipedia.org/wiki/Call_detail_record
+
+This might be a bit overkill. Note they do not have to only be generated for calls similar records can be generated for location updates as a device moves around. 
+
+Here is an example, artificially generated JSON version of what a CDR looks like: 
+ {
+        "CALLING_MSISDN": "174N6KL4Z0",
+        "CALL_RESULT": "ANSWERED",
+        "CALL_TYPE": "VOICE",
+        "CHARGE": 11.308333333333334,
+        "END_TIME": 1584110185,
+        "ID": "e711dc37-80e2-4fc8-942e-a3885b82faa4",
+        "ORIGINATING": "HAM03",
+        "RECEIVING_MSISDN": "1516LSJFVBC",
+        "START_TIME": 1584108828,
+        "TERMINATING": "DUS05"
+    },
+
+Also note the origin and termination are network devices Towers in this simplified example, it could also be a fixed line point like a city which is no use for us
